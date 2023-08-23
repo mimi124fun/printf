@@ -21,7 +21,7 @@
 
         unsigned long int num = va_arg(types, unsigned long int);
 
-        num = convert_size_unsgnd(num, size);
+        num = convert_size_unsgnd(num, sz);
 
         if (num == 0)
 
@@ -43,7 +43,7 @@
 
 }
 
-                                                                                                                                                                         1,17          Top
+                                                                                           
 /************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
 /**
  * print_octal - Prints an unsigned number in octal notation
@@ -128,7 +128,7 @@
 
 int print_hexa_upper(va_list types, char buffer[],
 
-        int  (flags, int wth, int precison, int sz)
+        int  flags, int wth, int precison, int sz)
 
 {
         return (print_hexa(types, "0123456789ABCDEF", buffer,
@@ -164,7 +164,7 @@ int print_hexa_upper(va_list types, char buffer[],
 
         UNUSED(wth);
 
-        num = convert_size_unsgnd(num, size);
+        num = convert_size_unsgnd(num, sz);
 
         if (num == 0)
 

@@ -70,7 +70,7 @@ int print_non_printable(va_list types, char buffer[],
         char *str = va_arg(types, char *);
 
         UNUSED(flags);
-        UNUSED(width);
+        UNUSED(wth);
         UNUSED(precison);
         UNUSED(sz);
 
@@ -177,7 +177,7 @@ int print_rot13string(va_list types, char buffer[],
                                 break;
                         }
                 }
-                if (!in[j])
+                if (!in[h])
                 {
                         x = str[i];
                         write(1, &x, 1);
